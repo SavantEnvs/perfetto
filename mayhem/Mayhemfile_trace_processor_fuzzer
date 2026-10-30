@@ -1,0 +1,8 @@
+project: savantenvs/perfetto
+target: trace_processor_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/trace_processor_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/trace_processor_fuzzer
+    libfuzzer: true

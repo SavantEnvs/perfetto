@@ -1,0 +1,7 @@
+project: savantenvs/perfetto
+target: protozero_message_filter_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/protozero_message_filter_fuzzer
+    libfuzzer: true

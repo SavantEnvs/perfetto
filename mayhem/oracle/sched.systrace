@@ -1,0 +1,13 @@
+# tracer: nop
+#
+#                                _-----=> irqs-off
+#                               / _----=> need-resched
+#                              | / _---=> hardirq/softirq
+#                              || / _--=> preempt-depth
+#                              ||| /     delay
+#           TASK-PID     CPU#  ||||    TIMESTAMP  FUNCTION
+#              | |         |   ||||       |         |
+          <idle>-0     [000] d..3  100.000100: sched_switch: prev_comm=swapper/0 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=worker next_pid=42 next_prio=120
+          worker-42    [000] d..3  100.000600: sched_switch: prev_comm=worker prev_pid=42 prev_prio=120 prev_state=S ==> next_comm=swapper/0 next_pid=0 next_prio=120
+          <idle>-0     [000] d..3  100.001000: sched_switch: prev_comm=swapper/0 prev_pid=0 prev_prio=120 prev_state=R ==> next_comm=helper next_pid=77 next_prio=110
+          helper-77    [000] d..3  100.001300: sched_switch: prev_comm=helper prev_pid=77 prev_prio=110 prev_state=S ==> next_comm=swapper/0 next_pid=0 next_prio=120

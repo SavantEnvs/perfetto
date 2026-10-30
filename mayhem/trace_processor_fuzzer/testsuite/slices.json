@@ -1,0 +1,9 @@
+{"traceEvents":[
+{"name":"process_name","ph":"M","pid":10,"tid":0,"args":{"name":"demo_proc"}},
+{"name":"thread_name","ph":"M","pid":10,"tid":11,"args":{"name":"main_thread"}},
+{"name":"outer","cat":"c","ph":"X","ts":1000,"dur":500,"pid":10,"tid":11},
+{"name":"inner","cat":"c","ph":"X","ts":1100,"dur":200,"pid":10,"tid":11},
+{"name":"later","cat":"c","ph":"X","ts":2000,"dur":42,"pid":10,"tid":11},
+{"name":"cpu_load","ph":"C","ts":1500,"pid":10,"tid":11,"args":{"cpu_load":7}},
+{"name":"cpu_load","ph":"C","ts":2500,"pid":10,"tid":11,"args":{"cpu_load":13}}
+]}

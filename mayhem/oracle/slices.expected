@@ -1,0 +1,14 @@
+"name","ts","dur","depth"
+"outer",1000000,500000,0
+"inner",1100000,200000,1
+"later",2000000,42000,0
+
+"thread_name","process_name","pid"
+"main_thread","demo_proc",10
+
+"name","ts","value"
+"cpu_load cpu_load",1500000,7.000000
+"cpu_load cpu_load",2500000,13.000000
+
+"n_slices","total_dur"
+3,742000

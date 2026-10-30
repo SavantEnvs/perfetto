@@ -1,0 +1,7 @@
+project: savantenvs/perfetto
+target: buffered_frame_deserializer_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/buffered_frame_deserializer_fuzzer
+    libfuzzer: true
