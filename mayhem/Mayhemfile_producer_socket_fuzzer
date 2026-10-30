@@ -1,0 +1,7 @@
+project: savantenvs/perfetto
+target: producer_socket_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/producer_socket_fuzzer
+    libfuzzer: true

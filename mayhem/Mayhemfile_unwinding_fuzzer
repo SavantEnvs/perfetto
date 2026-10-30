@@ -1,0 +1,7 @@
+project: savantenvs/perfetto
+target: unwinding_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/unwinding_fuzzer
+    libfuzzer: true

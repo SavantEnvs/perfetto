@@ -1,0 +1,7 @@
+project: savantenvs/perfetto
+target: end_to_end_shared_memory_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/end_to_end_shared_memory_fuzzer
+    libfuzzer: true

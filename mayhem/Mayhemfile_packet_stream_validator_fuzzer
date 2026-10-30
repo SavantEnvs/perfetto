@@ -1,0 +1,7 @@
+project: savantenvs/perfetto
+target: packet_stream_validator_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+cmds:
+  - cmd: /mayhem/packet_stream_validator_fuzzer
+    libfuzzer: true
